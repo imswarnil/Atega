@@ -1,0 +1,79 @@
+// *****************
+// Card Component
+// *****************
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color-alt;
+    color: $text-color;
+    border: 1px solid $border-color;
+    border-radius: $global-radius;
+    overflow: hidden;
+    transition: $global-transition;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    &:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+  
+    &__image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    &__body {
+      padding: $base-spacing-unit;
+  
+      &--center {
+        text-align: center;
+      }
+    }
+  
+    &__title {
+      font-size: $font-size-h4;
+      font-weight: $heading-font-weight;
+      color: $heading-font-color;
+      margin-bottom: $base-spacing-unit / 2;
+    }
+  
+    &__text {
+      font-size: $base-font-size;
+      color: $text-color-alt;
+      margin-bottom: $base-spacing-unit;
+    }
+  
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      padding: $base-spacing-unit;
+      background: $background-color;
+      border-top: 1px solid $border-color;
+    }
+  
+    &__button {
+      @extend .button;
+      padding: 5px 10px;
+      font-size: 14px;
+  
+      &--primary {
+        background-color: $brand-color;
+        color: $button-color;
+  
+        &:hover {
+          background-color: $button-background-hover;
+        }
+      }
+  
+      &--secondary {
+        background-color: $background-color;
+        color: $text-color;
+  
+        &:hover {
+          background-color: lighten($background-color, 5%);
+        }
+      }
+    }
+  }
+  
