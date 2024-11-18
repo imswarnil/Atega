@@ -12,7 +12,6 @@ layout: default
     <div class="post__content">
       {{ content }}
     </div>
-
     {% include share.html %}
 
     {% include post-navigation.html %}
@@ -22,3 +21,24 @@ layout: default
   </article>
 </div>
 <!-- end post -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col col-8">
+      {% include hero.html %}
+      <article class="post animate">
+        <div class="post__content">
+          {{ content }}
+        </div>
+        {% include share.html %}
+        {% include post-navigation.html %}
+        {% if site.disqus-identifier %} {% include disqus-comments.html %} {% endif %}
+      </article>
+    </div>
+    <div class="col col-4">
+      {% assign contentsTitle = page.toc_title | default: 'Contents' %}
+        {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
+    </div>
+  </div>
+</div>
