@@ -5,6 +5,7 @@ date:   2019-01-19 15:01:35 -0700
 image:  '/images//emberjs_daily.png'
 tags:   Ember.js Testing Patterns JavaScript
 ---
+
 ## Selectors in Ember Page Object
 [Ember CLI Page Object](http://ember-cli-page-object.js.org/docs/v1.15.x/) is a fantastic addon. It's an implementation of [Page Object Pattern](http://blog.josephwilk.net/cucumber/page-object-pattern.html) for acceptance testing in Ember. The usage of the addon in your Ember project is a good thing by itself. But there are a couple of small tricks that can make the experience even more delightful, and I'd like to share them with you.
 
