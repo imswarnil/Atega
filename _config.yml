@@ -3,8 +3,8 @@
 title: Pavlo Osadchyi
 logo: # You can add own logo. For example '/images/logo.png'.
 description:  Pavlo Osadchyi's personal website
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pavloosadchyi.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/Atega" # the subpath of your site, e.g. /blog
+url:  # the base hostname & protocol for your site, e.g. http://example.com
 blog-theme: light # By default, Atega theme uses a 'light' color scheme, to change the color scheme to dark use 'dark' value (_includes/color-scheme)
 
 
